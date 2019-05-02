@@ -14,7 +14,6 @@ key = config_data["key"]
 
 py.sign_in(username, key)
 
-
 @get('/plot')
 def form():
     return template('template', title='Plot.ly Graph')
@@ -65,5 +64,7 @@ def submit():
     return template('template2', title='Plot.ly Graph', plot_url=str(plot_url))
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 8084))
+    port = int(os.environ.get('PORT', 8083))
     run(host='0.0.0.0', port=port, debug=True)
+
+
