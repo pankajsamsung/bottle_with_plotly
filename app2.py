@@ -6,7 +6,7 @@ from plotly.graph_objs import *
 
 
 # add your username and api key
-py.sign_in("pankaj009", "KKq8zTdcR6bGtzqAsxrc")
+py.sign_in("your ploy.ly username", " key")
 
 
 @get('/plot')
